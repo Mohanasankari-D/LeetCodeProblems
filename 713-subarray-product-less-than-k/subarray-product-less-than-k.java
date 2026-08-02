@@ -13,7 +13,7 @@ class Solution {
                 
                 if(prod<k)
                 {
-                    count++;
+                    //count++;
                     c++;
                 }
                 else
