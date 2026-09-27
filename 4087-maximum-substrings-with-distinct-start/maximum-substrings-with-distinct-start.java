@@ -1,0 +1,15 @@
+class Solution {
+    public int maxDistinct(String s) {
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = 0; i < s.length(); i++) {
+            char ch = s.charAt(i);
+
+            if (sb.indexOf(String.valueOf(ch)) == -1) {
+                sb.append(ch);
+            }
+        }
+
+        return sb.length();
+    }
+}
